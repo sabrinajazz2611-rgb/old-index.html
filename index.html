@@ -1,0 +1,738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;Somnium Illusio AI — Services &amp; Pricing&lt;/title&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&amp;family=Montserrat:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">:root {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--teal-deep: #0D1F1F;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--teal: #1A3A3A;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--gold: #C8A84B;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--gold-bright: #E8C86A;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--black: #060A0A;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--border: rgba(200,168,75,0.25);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--text: #E8E4D8;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--muted: rgba(232,228,216,0.55);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>--white: #F5F2EA;</p>
+<p class="p1">}</p>
+<p class="p1">* { margin:0; padding:0; box-sizing:border-box; }</p>
+<p class="p1">html { scroll-behavior:smooth; }</p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: var(--black);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Montserrat', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 300;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>overflow-x: hidden;</p>
+<p class="p1">}</p>
+<p class="p1">body::before {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content:'';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:fixed;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>inset:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:</p>
+<p class="p1"><span class="Apple-converted-space">    </span>radial-gradient(ellipse 120% 80% at 50% -10%, rgba(26,58,58,0.6) 0%, transparent 60%),</p>
+<p class="p1"><span class="Apple-converted-space">    </span>radial-gradient(ellipse 60% 40% at 10% 50%, rgba(200,168,75,0.04) 0%, transparent 50%);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>pointer-events:none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index:0;</p>
+<p class="p1">}</p>
+<p class="p1">.hero {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>min-height:100vh;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex-direction:column;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:80px 40px 100px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index:1;</p>
+<p class="p1">}</p>
+<p class="p1">.hero-eyebrow {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:9px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:500;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:6px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:24px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>animation:fadeUp 1s ease 0.3s forwards;</p>
+<p class="p1">}</p>
+<p class="p1">.hero-title {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family:'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:clamp(52px, 9vw, 110px);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:300;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height:0.95;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:-2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--white);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>animation:fadeUp 1s ease 0.5s forwards;</p>
+<p class="p1">}</p>
+<p class="p1">.hero-title .gold-word {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style:italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-shadow: 0 0 60px rgba(200,168,75,0.4);</p>
+<p class="p1">}</p>
+<p class="p1">.hero-latin {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family:'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:clamp(11px, 1.5vw, 14px);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:300;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style:italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:6px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:40px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>animation:fadeUp 1s ease 0.7s forwards;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1">}</p>
+<p class="p1">.gold-line {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width:80px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height:1px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:linear-gradient(90deg, transparent, var(--gold), transparent);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:0 auto 40px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>animation:fadeUp 1s ease 0.8s forwards;</p>
+<p class="p1">}</p>
+<p class="p1">.hero-tagline {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:12px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:400;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height:1.9;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>animation:fadeUp 1s ease 1s forwards;</p>
+<p class="p1">}</p>
+<p class="p1">.architecture {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index:1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:100px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width:1100px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:0 auto;</p>
+<p class="p1">}</p>
+<p class="p1">.arch-top {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:linear-gradient(145deg, #1A3A2A, #0D1F15);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:1px solid var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:32px 64px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:40px;</p>
+<p class="p1">}</p>
+<p class="p1">.arch-connector {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items:flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap:16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width:100%;</p>
+<p class="p1">}</p>
+<p class="p1">.arch-branch {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex-direction:column;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex:1;</p>
+<p class="p1">}</p>
+<p class="p1">.arch-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:rgba(13,31,31,0.8);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:28px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width:100%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition:all 0.3s ease;</p>
+<p class="p1">}</p>
+<p class="p1">.arch-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color:rgba(200,168,75,0.5);</p>
+<p class="p1">}</p>
+<p class="p1">.arch-label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:8px;</p>
+<p class="p1">}</p>
+<p class="p1">.arch-name {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family:'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:400;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style:italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--white);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height:1.3;</p>
+<p class="p1">}</p>
+<p class="p1">.arch-range {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:11px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:500;</p>
+<p class="p1">}</p>
+<p class="p1">.arch-desc {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height:1.6;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top:8px;</p>
+<p class="p1">}</p>
+<p class="p1">.studios-label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:5px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:10px;</p>
+<p class="p1">}</p>
+<p class="p1">.studios-name {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family:'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:28px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:300;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--white);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:2px;</p>
+<p class="p1">}</p>
+<p class="p1">.studios-tagline {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:11px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top:8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style:italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family:'Cormorant Garamond', serif;</p>
+<p class="p1">}</p>
+<p class="p1">.divider {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width:100%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height:1px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:linear-gradient(90deg, transparent, rgba(200,168,75,0.3), transparent);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index:1;</p>
+<p class="p1">}</p>
+<p class="p1">.section {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index:1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:100px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width:1100px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:0 auto;</p>
+<p class="p1">}</p>
+<p class="p1">.sec-eyebrow {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:9px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:500;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:6px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:16px;</p>
+<p class="p1">}</p>
+<p class="p1">.sec-title {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family:'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:clamp(36px, 5vw, 58px);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:300;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height:1.1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--white);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:14px;</p>
+<p class="p1">}</p>
+<p class="p1">.sec-title em { font-style:italic; color:var(--gold); }</p>
+<p class="p1">.sec-desc {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:12.5px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height:1.9;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width:520px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin:0 auto 64px;</p>
+<p class="p1">}</p>
+<p class="p1">.cards-grid {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:grid;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns:repeat(3, 1fr);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap:1px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:rgba(200,168,75,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:1px;</p>
+<p class="p1">}</p>
+<p class="p1">.p-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--black);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:44px 32px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition:all 0.4s ease;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-top:2px solid transparent;</p>
+<p class="p1">}</p>
+<p class="p1">.p-card:hover { background:#0D1A1A; border-top-color:var(--gold); }</p>
+<p class="p1">.p-card.feat { background:#0A1515; border-top:2px solid var(--gold); }</p>
+<p class="p1">.p-card.feat::after {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content:'MOST REQUESTED';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:absolute;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>top:0; right:24px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--black);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:700;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:4px 12px;</p>
+<p class="p1">}</p>
+<p class="p1">.p-tier { font-size:8px; letter-spacing:4px; text-transform:uppercase; color:var(--gold); margin-bottom:14px; }</p>
+<p class="p1">.p-name { font-family:'Cormorant Garamond', serif; font-size:24px; font-weight:400; color:var(--white); margin-bottom:10px; line-height:1.2; }</p>
+<p class="p1">.p-desc { font-size:11.5px; color:var(--muted); line-height:1.75; margin-bottom:28px; }</p>
+<p class="p1">.p-price { font-family:'Cormorant Garamond', serif; font-size:48px; font-weight:300; color:var(--gold); line-height:1; text-shadow:0 0 30px rgba(200,168,75,0.3); }</p>
+<p class="p1">.p-note { font-size:10px; color:var(--muted); letter-spacing:1px; margin-bottom:28px; }</p>
+<p class="p1">.p-list { list-style:none; border-top:1px solid rgba(200,168,75,0.15); padding-top:20px; }</p>
+<p class="p1">.p-list li { font-size:11px; color:var(--muted); padding:6px 0; display:flex; gap:10px; line-height:1.5; }</p>
+<p class="p1">.p-list li::before { content:'—'; color:var(--gold); font-size:9px; flex-shrink:0; margin-top:2px; }</p>
+<p class="p1">.wide-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--black);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:40px 44px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:grid;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns:1fr auto;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap:40px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:1px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-left:2px solid transparent;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition:all 0.3s ease;</p>
+<p class="p1">}</p>
+<p class="p1">.wide-card:hover { border-left-color:var(--gold); background:#0A1212; }</p>
+<p class="p1">.wide-card.premium { background:linear-gradient(135deg, #0D1A15, #080F0F); border-left:2px solid var(--gold); }</p>
+<p class="p1">.w-tier { font-size:8px; letter-spacing:4px; text-transform:uppercase; color:var(--gold); margin-bottom:10px; }</p>
+<p class="p1">.w-name { font-family:'Cormorant Garamond', serif; font-size:26px; font-weight:400; color:var(--white); margin-bottom:10px; }</p>
+<p class="p1">.w-desc { font-size:11.5px; color:var(--muted); line-height:1.75; max-width:580px; }</p>
+<p class="p1">.w-price { font-family:'Cormorant Garamond', serif; font-size:54px; font-weight:300; color:var(--gold); text-align:right; line-height:1; white-space:nowrap; }</p>
+<p class="p1">.w-sub { font-size:10px; color:var(--muted); text-align:right; letter-spacing:1px; margin-top:4px; }</p>
+<p class="p1">.hotel-box {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:linear-gradient(135deg, #0D1F15, #091510);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:1px solid var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:52px 48px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top:40px;</p>
+<p class="p1">}</p>
+<p class="p1">.hotel-range { display:flex; justify-content:center; gap:40px; margin:28px 0; flex-wrap:wrap; }</p>
+<p class="p1">.hotel-tier-item { text-align:center; }</p>
+<p class="p1">.hti-label { font-size:8px; letter-spacing:3px; color:var(--muted); text-transform:uppercase; margin-bottom:6px; }</p>
+<p class="p1">.hti-price { font-family:'Cormorant Garamond', serif; font-size:36px; font-weight:300; color:var(--gold); line-height:1; }</p>
+<p class="p1">.hti-sub { font-size:10px; color:var(--muted); margin-top:4px; }</p>
+<p class="p1">.academy-grid {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:grid;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns:repeat(3, 1fr);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap:16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:16px;</p>
+<p class="p1">}</p>
+<p class="p1">.ac-card {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:#0A1212;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:1px solid rgba(200,168,75,0.15);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:32px 26px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition:all 0.35s ease;</p>
+<p class="p1">}</p>
+<p class="p1">.ac-card:hover { border-color:rgba(200,168,75,0.45); background:#0D1818; transform:translateY(-4px); }</p>
+<p class="p1">.ac-card.flagship {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid-column:span 3;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:linear-gradient(135deg, #0D1A20, #080F12);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color:var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:40px;</p>
+<p class="p1">}</p>
+<p class="p1">.ac-badge {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight:600;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:3px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:var(--black);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:5px 14px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom:20px;</p>
+<p class="p1">}</p>
+<p class="p1">.ac-name { font-family:'Cormorant Garamond', serif; font-size:22px; font-weight:400; color:var(--white); margin-bottom:10px; line-height:1.2; }</p>
+<p class="p1">.ac-desc { font-size:11.5px; color:var(--muted); line-height:1.75; margin-bottom:20px; }</p>
+<p class="p1">.ac-price { font-family:'Cormorant Garamond', serif; font-size:38px; font-weight:300; color:var(--gold); line-height:1; }</p>
+<p class="p1">.ac-dur { font-size:10px; color:var(--muted); letter-spacing:1px; margin-top:5px; }</p>
+<p class="p1">.flagship-grid { display:grid; grid-template-columns:1fr 240px; gap:48px; }</p>
+<p class="p1">.fs-curriculum { list-style:none; margin-top:16px; }</p>
+<p class="p1">.fs-curriculum li { font-size:11px; color:var(--muted); padding:8px 0; border-bottom:1px solid rgba(200,168,75,0.08); display:flex; gap:14px; line-height:1.5; }</p>
+<p class="p1">.wk { color:var(--gold); font-size:9px; font-weight:600; flex-shrink:0; margin-top:1px; letter-spacing:1px; }</p>
+<p class="p1">.fs-prices { border-left:1px solid rgba(200,168,75,0.2); padding-left:24px; display:flex; flex-direction:column; gap:12px; }</p>
+<p class="p1">.fsp-label { font-size:8px; letter-spacing:3px; color:var(--muted); text-transform:uppercase; margin-bottom:4px; }</p>
+<p class="p1">.fsp-amt { font-family:'Cormorant Garamond', serif; font-size:36px; font-weight:300; color:var(--gold); line-height:1; }</p>
+<p class="p1">.fsp-sub { font-size:10px; color:var(--muted); margin-top:3px; }</p>
+<p class="p1">.entry-strip {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:#0A1212;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border:1px solid rgba(200,168,75,0.2);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding:28px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display:flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items:center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content:space-between;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex-wrap:wrap;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap:20px;</p>
+<p class="p1">}</p>
+<p class="p1">.es-label { font-size:8px; letter-spacing:3px; color:var(--gold); text-transform:uppercase; margin-bottom:6px; }</p>
+<p class="p1">.es-name { font-family:'Cormorant Garamond', serif; font-size:22px; font-weight:400; color:var(--white); margin-bottom:4px; }</p>
+<p class="p1">.es-desc { font-size:11px; color:var(--muted); }</p>
+<p class="p1">.es-price { font-family:'Cormorant Garamond', serif; font-size:52px; font-weight:300; color:var(--gold); line-height:1; }</p>
+<p class="p1">.es-sub { font-size:10px; color:var(--muted); text-align:right; }</p>
+<p class="p1">.cta { position:relative; z-index:1; padding:120px 40px; text-align:center; overflow:hidden; }</p>
+<p class="p1">.cta::before {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>content:'ET LUX FACTA EST';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>position:absolute;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>top:50%; left:50%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform:translate(-50%, -50%);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family:'Cormorant Garamond', serif;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size:clamp(40px, 8vw, 100px);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-style:italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color:rgba(200,168,75,0.04);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>white-space:nowrap;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing:4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>pointer-events:none;</p>
+<p class="p1">}</p>
+<p class="p1">.cta-inner { position:relative; z-index:1; }</p>
+<p class="p1">.cta-title { font-family:'Cormorant Garamond', serif; font-size:clamp(32px, 5vw, 56px); font-weight:300; color:var(--white); margin-bottom:16px; line-height:1.15; }</p>
+<p class="p1">.cta-title em { font-style:italic; color:var(--gold); }</p>
+<p class="p1">.cta-sub { font-size:12px; color:var(--muted); line-height:1.9; margin-bottom:52px; }</p>
+<p class="p1">.btn-row { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }</p>
+<p class="p1">.btn-g { display:inline-block; padding:17px 52px; background:var(--gold); color:var(--black); font-size:9px; font-weight:700; letter-spacing:4px; text-transform:uppercase; text-decoration:none; font-family:'Montserrat',sans-serif; transition:all 0.3s ease; }</p>
+<p class="p1">.btn-g:hover { background:var(--gold-bright); transform:translateY(-2px); }</p>
+<p class="p1">.btn-o { display:inline-block; padding:16px 52px; background:transparent; color:var(--gold); font-size:9px; font-weight:500; letter-spacing:4px; text-transform:uppercase; text-decoration:none; border:1px solid rgba(200,168,75,0.4); font-family:'Montserrat',sans-serif; transition:all 0.3s ease; }</p>
+<p class="p1">.btn-o:hover { border-color:var(--gold); background:rgba(200,168,75,0.06); transform:translateY(-2px); }</p>
+<p class="p1">footer { position:relative; z-index:1; border-top:1px solid rgba(200,168,75,0.15); padding:48px 40px; text-align:center; }</p>
+<p class="p1">.ft-brand { font-family:'Cormorant Garamond', serif; font-size:22px; font-weight:300; color:var(--gold); letter-spacing:4px; margin-bottom:6px; }</p>
+<p class="p1">.ft-latin { font-family:'Cormorant Garamond', serif; font-style:italic; font-size:13px; color:rgba(200,168,75,0.5); margin-bottom:12px; letter-spacing:3px; }</p>
+<p class="p1">.ft-tag { font-size:10px; color:var(--muted); letter-spacing:1.5px; line-height:1.8; }</p>
+<p class="p1">@keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }</p>
+<p class="p1">.reveal { opacity:0; transform:translateY(20px); transition:opacity 0.8s ease, transform 0.8s ease; }</p>
+<p class="p1">.reveal.in { opacity:1; transform:translateY(0); }</p>
+<p class="p1">@media(max-width:900px) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cards-grid { grid-template-columns:1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.academy-grid { grid-template-columns:1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.ac-card.flagship { grid-column:span 1; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.flagship-grid { grid-template-columns:1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.fs-prices { border-left:none; border-top:1px solid rgba(200,168,75,0.2); padding-left:0; padding-top:24px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.wide-card { grid-template-columns:1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.w-price { text-align:left; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.arch-connector { flex-direction:column; align-items:center; }</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="hero-eyebrow"&gt;Somnium Illusio AI · Sabrina Montgomery&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1 class="hero-title"&gt;Design &lt;span class="gold-word"&gt;how&lt;/span&gt;&lt;br&gt;your clients feel&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="hero-latin"&gt;Et Lux Facta Est · And The Light Was Made&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="gold-line"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="hero-tagline"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Sensory Experience Design™ &amp;nbsp;·&amp;nbsp; AI Systems &amp;nbsp;·&amp;nbsp; The Somnium Illusio Method™&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span style="font-size:10px;color:rgba(232,228,216,0.3);"&gt;Through sound, visuals, and atmosphere — for brands that refuse to be ordinary&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="divider"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="architecture"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="sec-eyebrow reveal"&gt;Brand Architecture&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title reveal"&gt;One Vision. &lt;em&gt;Three Expressions.&lt;/em&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="sec-desc reveal"&gt;A complete creative, commercial, and educational universe built under one name.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="arch-top reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="studios-label"&gt;Parent Company&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="studios-name"&gt;SOMNIUM ILLUSIO STUDIOS™&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="studios-tagline"&gt;Film · Music · Cultural Storytelling · Creative Vision&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="arch-connector reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="arch-branch"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="arch-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-label"&gt;Commercial&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-name"&gt;Somnium Illusio Signature:&lt;br&gt;Sensory Experience Design™&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-range"&gt;$500 — $500,000+&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-desc"&gt;Hotels · MedSpas · Luxury Brands&lt;br&gt;B2B · High-End Clients&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="arch-branch"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="arch-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-label"&gt;Education&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-name"&gt;The Somnium&lt;br&gt;Illusio Method™&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-range"&gt;$97 — $2,997&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-desc"&gt;Entrepreneurs · Creatives&lt;br&gt;Business Owners · Students&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="arch-branch"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="arch-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-label"&gt;Creative&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-name"&gt;Ethereal Series &amp;amp;&lt;br&gt;Film Works&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-range"&gt;The Soul of the Brand&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="arch-desc"&gt;Film · Music · Immersive Art&lt;br&gt;Cultural Storytelling&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="divider"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="sec-eyebrow reveal"&gt;Premium Services&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title reveal"&gt;For Hotels, MedSpas&lt;br&gt;&lt;em&gt;&amp;amp; Discerning Brands&lt;/em&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="sec-desc reveal"&gt;Each engagement is private, structured, and designed to move your brand into a category your competition cannot reach.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="cards-grid reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="p-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="p-tier"&gt;Entry · Phase One&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="p-name"&gt;Business Presence Audit&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="p-desc"&gt;A focused diagnostic of your brand, website, and AI opportunity landscape. Written action plan delivered.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="p-price"&gt;$500&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="p-note"&gt;60 min · One session&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;ul class="p-list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Website and brand review&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;AI opportunity mapping&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Written action plan&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Positioning recommendations&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="p-card feat"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="p-tier"&gt;Signature&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="p-name"&gt;Strategy &amp;amp; Implementation&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="p-desc"&gt;A deep private session that builds your content system, refines your positioning, and moves you from scattered to structured.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="p-price"&gt;$1,500&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="p-note"&gt;90 min · 2-week follow up&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;ul class="p-list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Brand positioning deep-dive&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;AI content system build&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Live improvements during session&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;2 weeks priority access&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Messaging that converts&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="p-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="p-tier"&gt;Premium&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="p-name"&gt;Full Brand &amp;amp; AI Integration&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="p-desc"&gt;Complete transformation. Brand identity, content system, AI workflow, and visual assets unified into one experience.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="p-price"&gt;$3,500&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="p-note"&gt;Full project · 30 days&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;ul class="p-list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Complete brand overhaul&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;AI workflow design&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Visual + audio identity&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Content system setup&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Client acquisition system&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="wide-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="w-tier"&gt;MedSpa &amp;amp; Weight Loss Clinic Specialist&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="w-name"&gt;Patient Acquisition Sprint&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="w-desc"&gt;Built exclusively for aesthetic practices and weight loss clinics. Website copy, booking flow redesign, AI content calendar, and social ad creative direction. More qualified inquiries within 30 days.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="w-price"&gt;$2,500&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="w-sub"&gt;Full project&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="wide-card premium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="w-tier"&gt;Ongoing · Limited to 5 Clients&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 class="w-name"&gt;Advisory Retainer&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="w-desc"&gt;For those operating at a higher level. Monthly strategic sessions, priority access, and ongoing system refinement as your business grows.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="w-price"&gt;$1,000&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="w-sub"&gt;Per month&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hotel-box reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sec-eyebrow" style="margin-bottom:12px;"&gt;Luxury Hotel &amp;amp; Hospitality&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,34px);font-weight:300;font-style:italic;color:var(--white);margin-bottom:12px;"&gt;Somnium Illusio Signature:&lt;br&gt;Sensory Experience Design™&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p style="font-size:12px;color:var(--muted);max-width:580px;margin:0 auto 36px;line-height:1.9;"&gt;Full-property sensory design — sound identity, visual atmosphere, and guest experience architecture for boutique luxury hotels and resort properties. When guests feel something they cannot name, they come back. And they bring others.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hotel-range"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hotel-tier-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="hti-label"&gt;Phase 1 · Pilot&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hti-price"&gt;$15K–$35K&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="hti-sub"&gt;One zone · Spa or Lobby&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hotel-tier-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="hti-label"&gt;Phase 2 · Full Property&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hti-price"&gt;$50K–$150K&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="hti-sub"&gt;Multiple zones&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hotel-tier-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="hti-label"&gt;Phase 3 · Global Brand&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hti-price"&gt;$150K–$500K+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="hti-sub"&gt;Multi-location systems&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#contact" class="btn-o" style="font-size:9px;"&gt;Request a Private Consultation&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="divider"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="sec-eyebrow reveal"&gt;The Somnium Illusio Method™&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="sec-title reveal"&gt;For Entrepreneurs&lt;br&gt;&lt;em&gt;&amp;amp; Everyday Builders&lt;/em&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="sec-desc reveal"&gt;Learn AI. Build income. Work from anywhere. For people who are done waiting and ready to build something real — no matter what the world does next.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="academy-grid reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="ac-card flagship"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="ac-badge"&gt;New · Most In-Demand · 2026&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="flagship-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="ac-name" style="font-size:30px;margin-bottom:12px;"&gt;Agentic AI:&lt;br&gt;Build Your AI Workforce&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="ac-desc"&gt;The most powerful AI skill available today. Build autonomous agents that research, write, post content, follow up with clients, and run entire workflows — without you doing it manually. One person operating like a team of ten.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul class="fs-curriculum"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;span class="wk"&gt;WK 1&lt;/span&gt;What agents are and why they change everything&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;span class="wk"&gt;WK 2&lt;/span&gt;Tools — n8n, Make, Claude, GPT-4o, Relevance AI&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;span class="wk"&gt;WK 3&lt;/span&gt;Build your first working agent live in class&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;span class="wk"&gt;WK 4&lt;/span&gt;Client acquisition agent — outreach while you sleep&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;span class="wk"&gt;WK 5&lt;/span&gt;Agentic content system — create and post autonomously&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;span class="wk"&gt;WK 6&lt;/span&gt;Your full agentic business stack&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="fs-prices"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="background:rgba(200,168,75,0.06);border:1px solid rgba(200,168,75,0.2);padding:14px 16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-label"&gt;Self-Paced&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="fsp-amt" style="font-size:28px;color:var(--muted);"&gt;$497&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-sub"&gt;Full curriculum + templates&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-sub"&gt;Best for independent learners&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="background:rgba(200,168,75,0.1);border:1px solid var(--gold);padding:14px 16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-label" style="color:var(--gold-bright);"&gt;Live Cohort&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="fsp-amt"&gt;$797&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-sub"&gt;6 weeks · Real-time&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-sub"&gt;Best for momentum + accountability&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="background:rgba(200,168,75,0.06);border:1px solid rgba(200,168,75,0.2);padding:14px 16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-label"&gt;Build &amp;amp; Launch&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="fsp-amt" style="font-size:26px;"&gt;$1,200+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-sub"&gt;Implementation upgrade&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-sub"&gt;Launch-ready workflows built with you&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="background:rgba(200,168,75,0.06);border:1px solid rgba(200,168,75,0.2);padding:14px 16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-label"&gt;Private Implementation&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="fsp-amt" style="font-size:24px;"&gt;$2,500+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-sub"&gt;Done-with-you build&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-sub"&gt;Your workflows designed end-to-end&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="margin-top:28px;border:1px solid var(--gold);padding:28px 32px;background:linear-gradient(135deg,rgba(200,168,75,0.06),rgba(0,0,0,0));"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="fsp-label" style="margin-bottom:6px;"&gt;Elite&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--white);"&gt;Elite AI Business Build&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--gold);"&gt;$5,000–$7,500+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="font-size:12px;color:var(--muted);line-height:1.8;margin-bottom:20px;max-width:640px;"&gt;For serious operators who want a complete AI-powered business system built with direct guidance — including client acquisition pathways. Limited availability.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="background:rgba(200,168,75,0.04);border:1px solid rgba(200,168,75,0.15);padding:16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-size:10px;font-weight:600;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;"&gt;Outcome&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-size:11px;color:var(--muted);line-height:1.7;"&gt;A working agent stack that runs outreach, follow-up, and content so you stop doing everything manually.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="background:rgba(200,168,75,0.04);border:1px solid rgba(200,168,75,0.15);padding:16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-size:10px;font-weight:600;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;"&gt;Includes&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-size:11px;color:var(--muted);line-height:1.7;"&gt;Strategy + implementation sessions, custom workflows, templates, and launch plan tied to your exact business model.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="background:rgba(200,168,75,0.04);border:1px solid rgba(200,168,75,0.15);padding:16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-size:10px;font-weight:600;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;"&gt;Best For&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-size:11px;color:var(--muted);line-height:1.7;"&gt;Founders, consultants, clinics, creators, and service businesses ready to scale with systems — not hustle.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul style="list-style:none;padding:0;margin-bottom:20px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li style="font-size:11.5px;color:var(--muted);padding:6px 0;border-bottom:1px solid rgba(200,168,75,0.08);display:flex;gap:10px;"&gt;&lt;span style="color:var(--gold);flex-shrink:0;"&gt;—&lt;/span&gt;&lt;span&gt;&lt;strong style="color:var(--text);"&gt;Client Acquisition Agent:&lt;/strong&gt; lead sourcing → outreach → follow-up → booking prompts&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li style="font-size:11.5px;color:var(--muted);padding:6px 0;border-bottom:1px solid rgba(200,168,75,0.08);display:flex;gap:10px;"&gt;&lt;span style="color:var(--gold);flex-shrink:0;"&gt;—&lt;/span&gt;&lt;span&gt;&lt;strong style="color:var(--text);"&gt;Agentic Content System:&lt;/strong&gt; ideation → scripting → posting → repurposing&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li style="font-size:11.5px;color:var(--muted);padding:6px 0;border-bottom:1px solid rgba(200,168,75,0.08);display:flex;gap:10px;"&gt;&lt;span style="color:var(--gold);flex-shrink:0;"&gt;—&lt;/span&gt;&lt;span&gt;&lt;strong style="color:var(--text);"&gt;Workflow Orchestration:&lt;/strong&gt; n8n/Make + GPT/Claude + your tools&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li style="font-size:11.5px;color:var(--muted);padding:6px 0;display:flex;gap:10px;"&gt;&lt;span style="color:var(--gold);flex-shrink:0;"&gt;—&lt;/span&gt;&lt;span&gt;&lt;strong style="color:var(--text);"&gt;Launch &amp;amp; Optimization:&lt;/strong&gt; refine, test, and stabilize the system&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="font-size:10px;color:var(--muted);margin-bottom:16px;font-style:italic;"&gt;Listed prices are entry points. Advanced implementation and higher-touch builds are available based on scope.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#contact" class="btn-g" style="font-size:9px;padding:14px 32px;"&gt;Book a 15-Min Call&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#contact" class="btn-o" style="font-size:9px;padding:13px 32px;"&gt;Message for Payment Plans&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="ac-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="ac-name"&gt;Survival Skills for the Digital Economy&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-desc"&gt;Earn income online, work remotely, build backup income streams. Built for urgency. Built for now.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="ac-price"&gt;$197&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-dur"&gt;2 Weeks · Intensive&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="ac-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="ac-name"&gt;AI Foundations&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-desc"&gt;AI tools, online presence, your first offer. Perfect for complete beginners who want a real foundation fast.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="ac-price"&gt;$297&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-dur"&gt;4 Weeks · Live Cohort&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="ac-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="ac-name"&gt;AI Content Mastery&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-desc"&gt;Create professional video, graphics, copy, and social content using AI. No design experience needed.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="ac-price"&gt;$397&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-dur"&gt;4 Weeks · Live&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="ac-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="ac-name"&gt;Build Your Business Online&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-desc"&gt;Offer creation, website basics, content system, client attraction. From idea to launched business.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="ac-price"&gt;$497&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-dur"&gt;6 Weeks · Live Cohort&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="ac-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="ac-name"&gt;Private Mentorship&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-desc"&gt;One session with Sabrina. Your business, your questions, your situation. Personalized action plan.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="ac-price"&gt;$350&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-dur"&gt;60 Min · One-on-One&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="ac-card" style="border-color:rgba(200,168,75,0.4);"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="ac-badge"&gt;Best Value&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="ac-name"&gt;Full Academy Access&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-desc"&gt;All programs. All cohorts. Community. Priority mentorship. For serious students committed to change.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="ac-price"&gt;$997&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="ac-dur"&gt;Everything · Ongoing&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="entry-strip reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="es-label"&gt;Weekend Entry Point&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="es-name"&gt;Your First AI Business in One Weekend&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="es-desc"&gt;Two hours live. From zero to a working business concept using AI. Message &lt;strong style="color:var(--gold);"&gt;SUNDAY&lt;/strong&gt; to join.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="es-price"&gt;$97&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="es-sub"&gt;Weekend Workshop&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="reveal" style="text-align:center;font-size:11px;color:var(--muted);margin-top:28px;line-height:1.8;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Payment plans available on all programs over $297 &amp;nbsp;·&amp;nbsp; Message directly to arrange</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="divider"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="cta" id="contact"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="cta-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p style="font-size:9px;letter-spacing:6px;color:var(--gold);text-transform:uppercase;margin-bottom:20px;"&gt;Begin&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="cta-title"&gt;Start with &lt;em&gt;a conversation.&lt;/em&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="cta-sub"&gt;A 15-minute call to find the right path forward for your business.&lt;br&gt;No pressure. No obligation. Just clarity and direction.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="btn-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#" class="btn-g"&gt;Book a Call — Let's Talk&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#" class="btn-o"&gt;Download Full Services Guide&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="ft-brand"&gt;SOMNIUM ILLUSIO AI&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="ft-latin"&gt;Et Lux Facta Est&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="ft-tag"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Designing how your clients feel — through sound, visuals, and atmosphere&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Sabrina Montgomery &amp;nbsp;·&amp;nbsp; somniumillusio.com</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">const els = document.querySelectorAll('.reveal');</p>
+<p class="p1">const obs = new IntersectionObserver((entries) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>entries.forEach((e, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (e.isIntersecting) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>setTimeout(() =&gt; e.target.classList.add('in'), i * 100);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>obs.unobserve(e.target);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">}, { threshold: 0.08 });</p>
+<p class="p1">els.forEach(el =&gt; obs.observe(el));</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
